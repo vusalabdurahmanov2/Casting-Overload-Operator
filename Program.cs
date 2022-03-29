@@ -67,8 +67,8 @@ namespace Casting_operator_overload
             try
             {
                 Console.Write("Salary:");
-                salary = Convert.ToInt32(Console.ReadLine());
-                if (salary < 0)
+                salary = Convert.ToDouble(Console.ReadLine());
+                if (salary <= 0)
                     throw new NotAvailableExceptions("Salary must be greater than 0.");
             }
             catch (Exception ex)
